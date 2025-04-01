@@ -21,7 +21,7 @@ public class ZooKeeperRunner
     zoo.add(new Tiger());
 
     for (Animal animal: zoo){
-      animal.speak();
+      hearTheAnimal(animal);
     }
 
     // Elephant elephant = new Elephant("leaves, grasses, roots", false, 60.0);
@@ -48,5 +48,9 @@ public class ZooKeeperRunner
     // Owl owl2 = new Owl("mice,insects", true, 4.0);
     // owl2.eat();
 
+  }
+
+  public static void hearTheAnimal(Animal currentAnimal){
+    currentAnimal.speak();
   }
 }
